@@ -31,9 +31,24 @@
   display: grid;
   -ms-grid-columns: 45% auto;
       grid-template-columns: 45% auto;
+  position: relative;
+  z-index: 1;
+}
+
+.container__store .background-store {
+  position: absolute;
+  z-index: -1;
+  height: inherit;
+  width: 100%;
+  opacity: 0.1;
+}
+
+.container__store .title {
+  letter-spacing: 1px;
 }
 
 .container__store .grid1 {
+  margin-top: 20px;
   margin-left: 76px;
   width: 63%;
 }
@@ -103,11 +118,15 @@
   font-size: 11.5px;
   letter-spacing: 0.5px;
   line-height: 22px;
+  -webkit-transition: 10s ease-in-out;
+  transition: 10s ease-in-out;
 }
 
 .container__store .grid1 .boton {
+  position: absolute;
+  bottom: 60px;
   margin-top: 23px;
-  border: 2px solid #3b63ba;
+  border: 1px solid var(--color-texto-gris);
   width: 100px;
   height: 36px;
   border-radius: 9px;
@@ -121,11 +140,17 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 11px;
-  color: #3b63ba;
 }
 
 .container__store .grid1 .boton a {
   text-decoration: none;
+  color: var(--color-texto-blanco);
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+
+.container__store .grid1 .boton a:hover {
+  color: var(--color-btn-rojo);
 }
 
 .container__store .grid2 {
@@ -143,22 +168,40 @@
 }
 
 .container__store .grid2 .flex-card {
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 17px;
   margin-left: 20px;
+  padding-left: 13px;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
 
-.container__store .grid2 .flex-card img {
+.container__store .grid2 .flex-card .card-store img {
   width: 160;
   height: 220px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.container__store .grid2 .flex-card .card-store img:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  opacity: 0.7;
+  border: 1.1px solid var(--color-btn-rojo);
+  border-radius: 14px;
 }
 
 .container__store .grid2 .flex-card .flex-icon {
   position: absolute;
   right: 117px;
-  bottom: 160px;
+  bottom: 40px;
   width: 40px;
   height: 40px;
   display: -webkit-box;
@@ -177,5 +220,12 @@
 .container__store .grid2 .flex-card .flex-icon img {
   width: auto;
   height: auto;
+}
+
+.container__store .grid2 .flex-card .flex-icon img:active {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 /*# sourceMappingURL=styles.css.map */

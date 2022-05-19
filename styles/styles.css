@@ -180,7 +180,7 @@
   padding-left: 13px;
   scroll-behavior: smooth;
   overflow-x: scroll;
-  scrollbar-width: none;
+  scrollbar-width: none !important;
 }
 
 .container__store .grid2 .flex-card .card-store img {
@@ -198,7 +198,7 @@
   border-radius: 14px;
 }
 
-.container__store .grid2 .flex-card .flex-icon {
+.container__store .grid2 .flex-icon {
   position: absolute;
   right: 117px;
   bottom: 40px;
@@ -217,12 +217,12 @@
   cursor: pointer;
 }
 
-.container__store .grid2 .flex-card .flex-icon img {
+.container__store .grid2 .flex-icon img {
   width: auto;
   height: auto;
 }
 
-.container__store .grid2 .flex-card .flex-icon img:active {
+.container__store .grid2 .flex-icon img:active {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   -webkit-transform: translateY(-3px);

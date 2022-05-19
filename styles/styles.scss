@@ -134,7 +134,7 @@
             padding-left: 13px;
             scroll-behavior: smooth;
             overflow-x: scroll;
-            scrollbar-width: none;
+            scrollbar-width: none !important;
             .card-store {
                 img {
                     width: 160;
@@ -148,24 +148,24 @@
                     }
                 }
             }
-            .flex-icon {
-                position: absolute;
-                right: 117px;
-                bottom: 40px;
-                width: 40px;
-                height: 40px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 30px;
-                cursor: pointer;
-                img {
-                    width: auto;
-                    height: auto;
-                    &:active {
-                        transition: all 0.2s ease-in-out;
-                        transform: translateY(-3px);
-                    }
+        }
+        .flex-icon {
+            position: absolute;
+            right: 117px;
+            bottom: 40px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            cursor: pointer;
+            img {
+                width: auto;
+                height: auto;
+                &:active {
+                    transition: all 0.2s ease-in-out;
+                    transform: translateY(-3px);
                 }
             }
         }

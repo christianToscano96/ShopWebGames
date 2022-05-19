@@ -123,8 +123,6 @@ body:-webkit-scrollbar {
   font-size: 11.5px;
   letter-spacing: 0.5px;
   line-height: 22px;
-  -webkit-transition: 10s ease-in-out;
-  transition: 10s ease-in-out;
 }
 
 .container__store .grid1 .boton {

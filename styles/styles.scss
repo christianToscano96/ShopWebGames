@@ -29,6 +29,11 @@ body {
 
 .header {
     background-color: var(--color-fondo);
+    .titulo {
+        color: var(--color-texto-blanco);
+        font-size: 25px;
+        width: 4%;
+    }
 }
 
 .barra {
@@ -37,12 +42,6 @@ body {
     gap: 6rem;
     padding-top: 20px;
     padding-bottom: 5px;
-}
-
-.titulo {
-    color: var(--color-texto-blanco);
-    font-size: 25px;
-    width: 4%;
 }
 
 .barra2 {

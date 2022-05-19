@@ -61,7 +61,8 @@ body {
    border-top: 1.5px solid var(--color-texto-gris);
    border-left: 1.5px solid var(--color-texto-gris);
    border-bottom: 1.5px solid var(--color-texto-gris);
-   border-radius: 4px;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
    width: 70px;
    height: 27px;
    padding: 5px;
@@ -117,14 +118,15 @@ body {
    width: 250px;
    padding-left: 5px;
    height: 27px;
-   border: 1px solid white;
+   border: 1px solid var(--color-texto-gris);
  }
 
  .boton {
    background-color: red;
    color: var(--color-texto-gris);
    border-color: var(--color-btn-rojo);
-   border-radius: 8px;
+   border-top-right-radius: 8px;
+   border-bottom-right-radius: 8px;
    width: 100px;
    height: 28px;
  }
@@ -150,8 +152,9 @@ body {
    gap: 2rem;
    padding-top: 5px;
    padding-bottom: 5px;
-   border-bottom: 2px solid rgb(112, 110, 110);
-   border-top: 2px solid rgb(112, 110, 110);
+   border-bottom: 1px solid rgb(112, 110, 110);
+   border-top: 1px solid rgb(112, 110, 110);
+   margin-bottom: 5px;
  }
 
  .items-catalogo {
@@ -160,7 +163,7 @@ body {
    font-size: 13px;
  }
 
- .navegacion:hover {
+ .items-catalogo:hover {
    color: #d71e25;
  }
 
@@ -175,7 +178,7 @@ body {
   background-position: center;
   background-size: cover;
   width: cover;
-  height: 50rem;
+  height: 500px;
 }
 
 .titulo-fondo {

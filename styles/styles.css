@@ -16,6 +16,11 @@
   --color-btn-rojo: #d71e25;
 }
 
+body:-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 .container {
   max-width: 1284px;
   height: 100%;
@@ -179,8 +184,8 @@
   margin-left: 20px;
   padding-left: 13px;
   scroll-behavior: smooth;
-  overflow-x: scroll;
-  scrollbar-width: none !important;
+  overflow-x: hidden;
+  scrollbar-width: none;
 }
 
 .container__store .grid2 .flex-card .card-store img {

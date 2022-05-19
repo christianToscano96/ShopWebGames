@@ -145,6 +145,12 @@ body:-webkit-scrollbar {
   font-size: 11px;
 }
 
+.container__store .grid1 .boton:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  border: 1px solid var(--color-btn-rojo);
+}
+
 .container__store .grid1 .boton a {
   text-decoration: none;
   color: var(--color-texto-blanco);

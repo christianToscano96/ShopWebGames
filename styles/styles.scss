@@ -115,6 +115,10 @@ body {
             justify-content: center;
             align-items: center;
             font-size: 11px;
+            &:hover {
+                transition: 1s;
+                border: 1px solid var(--color-btn-rojo);
+            }
             a {
                 text-decoration: none;
                 color: var(--color-texto-blanco);

@@ -27,7 +27,7 @@ body {
 
 .barra {
   display: flex;
-  justify-content: initial;
+  justify-content: space-between;
   gap: 6rem;
   padding-top: 20px;
   padding-bottom: 5px;
@@ -75,7 +75,6 @@ body {
   font-weight:400;
   font-size:15px;
   padding: 1px 10px;
-  font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
  }
  
  #menu ul li {
@@ -145,7 +144,7 @@ body {
    border-radius: 18px;
  }
 
- .busqueda {
+ .catalogo-header {
    display: flex;
    justify-content: center;
    gap: 2rem;
@@ -155,7 +154,7 @@ body {
    border-top: 2px solid rgb(112, 110, 110);
  }
 
- .navegacion {
+ .items-catalogo {
    color: var(--color-texto-blanco);
    text-decoration: none;
    font-size: 13px;
@@ -170,7 +169,7 @@ body {
    margin-bottom: -6px;
  }
 
-.godzilla {
+.fondo-header {
   background-image: url(../img/Watch-Dogs-2-generacion-xbox.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -179,30 +178,32 @@ body {
   height: 50rem;
 }
 
-.titulo-godzilla {
+.titulo-fondo {
   color: #24252b;
   padding-top: 5rem;
   padding-left: 3rem;
 }
 
-.button-godzilla1 {
+.button-fondo1 {
   background-color: var(--color-btn-rojo);
   margin-left: 3rem;
   width: 8rem;
   height: 3rem;
   border-radius: 10px;
   color: white;
+  border: none;
 }
 
-.button-godzilla2 {
+.button-fondo2 {
   background-color: var(--color-fondo);
   width: 8rem;
   height: 3rem;
   border-radius: 10px;
   color: white;
+  border: none;
 }
 
-.botones {
+.botones-fondo {
   display: flex;
   justify-content: initial;
   align-items: center;
@@ -218,7 +219,7 @@ body {
   color: white;
 }
 
-.parrafo4 {
+.favoritos {
   margin-top: 0.6rem;
   margin-left: -0.5rem;
 }

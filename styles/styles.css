@@ -15,7 +15,11 @@
   --color-texto-descripcion: #f2f2f2;
   --color-btn-rojo: #d71e25;
 }
-/*# sourceMappingURL=styles.css.map */
+
+body:-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
 
 body {
   background-color: var(--color-fondo);
@@ -26,8 +30,12 @@ body {
 }
 
 .barra {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 6rem;
   padding-top: 20px;
   padding-bottom: 5px;
@@ -40,137 +48,148 @@ body {
 }
 
 .barra2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 5px;
 }
 
 #menu ul {
-  list-style:none;
-  margin:0;
-  padding:0;
- }
- 
- #menu ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu ul li {
   background-color: var(--color-fondo);
+}
 
- }
- 
- .lista {
-   margin-top: 5rem;
-   border-top: 1.5px solid var(--color-texto-gris);
-   border-left: 1.5px solid var(--color-texto-gris);
-   border-bottom: 1.5px solid var(--color-texto-gris);
-   border-top-left-radius: 5px;
-   border-bottom-left-radius: 5px;
-   width: 70px;
-   height: 27px;
-   padding: 5px;
- }
+.lista {
+  margin-top: 5rem;
+  border-top: 1.5px solid var(--color-texto-gris);
+  border-left: 1.5px solid var(--color-texto-gris);
+  border-bottom: 1.5px solid var(--color-texto-gris);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 70px;
+  height: 27px;
+  padding: 5px;
+}
 
- #menu ul a {
-  display:block;
-  color:#fff;
+#menu ul a {
+  display: block;
+  color: #fff;
   padding-bottom: 10px;
-  text-decoration:none;
-  font-weight:400;
-  font-size:15px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
   padding: 1px 10px;
- }
- 
- #menu ul li {
-  position:relative;
-  float:left;
-  margin:0;
-  padding:0;
- }
- 
- #menu ul li:hover {
+}
+
+#menu ul li {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#menu ul li:hover {
   background: var(--color-fondo);
- }
+}
 
 #menu ul ul {
-  display:none;
-  position:absolute;
-  top:100%;
-  left:0;
-  background:#eee;
-  padding:0;
- }
- 
- #menu ul ul li {
-  float:none;
-  width:150px;
- }
- 
- #menu ul ul a {
-  line-height:120%;
-  padding:10px 15px;
- }
- 
- #menu ul li:hover > ul {
-  display:block;
- }
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #eee;
+  padding: 0;
+}
 
- .buscador {
-   background-color: var(--color-fondo);
-   color: var(--color-texto-blanco);
-   width: 250px;
-   padding-left: 5px;
-   height: 27px;
-   border: 1px solid var(--color-texto-gris);
- }
+#menu ul ul li {
+  float: none;
+  width: 150px;
+}
 
- .boton {
-   background-color: red;
-   color: var(--color-texto-gris);
-   border-color: var(--color-btn-rojo);
-   border-top-right-radius: 8px;
-   border-bottom-right-radius: 8px;
-   width: 100px;
-   height: 28px;
- }
+#menu ul ul a {
+  line-height: 120%;
+  padding: 10px 15px;
+}
 
- .datos {
-   color: var(--color-texto-gris);
-   margin-top: 6px;
-   display: flex;
-   justify-content: center;
-   gap: 1.2rem;
-   font-size: 14px;
- }
+#menu ul li:hover > ul {
+  display: block;
+}
 
- .perfil {
-   width: 30px;
-   height: 30px;
-   border-radius: 18px;
- }
+.buscador {
+  background-color: var(--color-fondo);
+  color: var(--color-texto-blanco);
+  width: 250px;
+  padding-left: 5px;
+  height: 27px;
+  border: 1px solid var(--color-texto-gris);
+}
 
- .catalogo-header {
-   display: flex;
-   justify-content: center;
-   gap: 2rem;
-   padding-top: 5px;
-   padding-bottom: 5px;
-   border-bottom: 1px solid rgb(112, 110, 110);
-   border-top: 1px solid rgb(112, 110, 110);
-   margin-bottom: 5px;
- }
+.boton {
+  background-color: red;
+  color: var(--color-texto-gris);
+  border-color: var(--color-btn-rojo);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 100px;
+  height: 28px;
+}
 
- .items-catalogo {
-   color: var(--color-texto-blanco);
-   text-decoration: none;
-   font-size: 13px;
- }
+.datos {
+  color: var(--color-texto-gris);
+  margin-top: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.2rem;
+  font-size: 14px;
+}
 
- .items-catalogo:hover {
-   color: #d71e25;
- }
+.perfil {
+  width: 30px;
+  height: 30px;
+  border-radius: 18px;
+}
 
- #gg {
-   border-bottom: 2px solid red;
-   margin-bottom: -6px;
- }
+.catalogo-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #706e6e;
+  border-top: 1px solid #706e6e;
+  margin-bottom: 5px;
+}
+
+.items-catalogo {
+  color: var(--color-texto-blanco);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.items-catalogo:hover {
+  color: #d71e25;
+}
+
+#gg {
+  border-bottom: 2px solid red;
+  margin-bottom: -6px;
+}
 
 .fondo-header {
   background-image: url(../img/Watch-Dogs-2-generacion-xbox.jpg);
@@ -207,9 +226,15 @@ body {
 }
 
 .botones-fondo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: initial;
-  align-items: center;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1rem;
 }
 
@@ -229,12 +254,6 @@ body {
 
 .icono-corazon {
   margin-top: 0.5rem;
-}
-
-
-body:-webkit-scrollbar {
-  width: 0;
-  height: 0;
 }
 
 .container {
@@ -341,7 +360,7 @@ body:-webkit-scrollbar {
   line-height: 22px;
 }
 
-.container__store .grid1 .boton {
+.container__store .grid1 .boton-store {
   position: absolute;
   bottom: 60px;
   margin-top: 23px;
@@ -361,20 +380,20 @@ body:-webkit-scrollbar {
   font-size: 11px;
 }
 
-.container__store .grid1 .boton:hover {
+.container__store .grid1 .boton-store:hover {
   -webkit-transition: 1s;
   transition: 1s;
   border: 1px solid var(--color-btn-rojo);
 }
 
-.container__store .grid1 .boton a {
+.container__store .grid1 .boton-store a {
   text-decoration: none;
   color: var(--color-texto-blanco);
   font-weight: 700;
   letter-spacing: 0.7px;
 }
 
-.container__store .grid1 .boton a:hover {
+.container__store .grid1 .boton-store a:hover {
   color: var(--color-btn-rojo);
 }
 

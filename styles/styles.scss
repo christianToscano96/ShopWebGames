@@ -15,13 +15,6 @@
     --color-btn-rojo: #d71e25;
 }
 
-body {
-    &:-webkit-scrollbar {
-        width: 0;
-        height: 0;
-    }
-}
-
 // SECTION HEADER LAUTI 
 body {
     background-color: var(--color-fondo);
@@ -29,25 +22,23 @@ body {
 
 .header {
     background-color: var(--color-fondo);
-    .titulo {
-        color: var(--color-texto-blanco);
-        font-size: 25px;
-        width: 4%;
+    .barra {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 6rem;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        .titulo {
+            color: var(--color-texto-blanco);
+            font-size: 25px;
+            width: 4%;
+        }
+        .barra2 {
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+        }
     }
-}
-
-.barra {
-    display: flex;
-    justify-content: space-between;
-    gap: 6rem;
-    padding-top: 20px;
-    padding-bottom: 5px;
-}
-
-.barra2 {
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
 }
 
 #menu ul {
@@ -112,7 +103,7 @@ body {
     padding: 10px 15px;
 }
 
-#menu ul li:hover>ul {
+#menu ul li:hover ul {
     display: block;
 }
 
@@ -142,97 +133,104 @@ body {
     justify-content: center;
     gap: 1.2rem;
     font-size: 14px;
-}
-
-.perfil {
-    width: 30px;
-    height: 30px;
-    border-radius: 18px;
+    .perfil {
+        width: 30px;
+        height: 30px;
+        border-radius: 18px;
+    }
 }
 
 .catalogo-header {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     padding-top: 5px;
     padding-bottom: 5px;
     border-bottom: 1px solid rgb(112, 110, 110);
     border-top: 1px solid rgb(112, 110, 110);
     margin-bottom: 5px;
-}
-
-.items-catalogo {
-    color: var(--color-texto-blanco);
-    text-decoration: none;
-    font-size: 13px;
-}
-
-.items-catalogo:hover {
-    color: #d71e25;
-}
-
-#gg {
-    border-bottom: 2px solid red;
-    margin-bottom: -6px;
+    #download {
+        border-bottom: 2px solid red;
+        margin-bottom: -6px;
+    }
+    .items-catalogo {
+        color: var(--color-texto-blanco);
+        text-decoration: none;
+        font-size: 13px;
+        &:hover {
+            color: #d71e25;
+        }
+    }
 }
 
 .fondo-header {
-    background-image: url(../img/Watch-Dogs-2-generacion-xbox.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: cover;
-    height: 500px;
-}
-
-.titulo-fondo {
-    color: #24252b;
-    padding-top: 5rem;
-    padding-left: 3rem;
-}
-
-.button-fondo1 {
-    background-color: var(--color-btn-rojo);
-    margin-left: 3rem;
-    width: 8rem;
-    height: 3rem;
-    border-radius: 10px;
-    color: white;
-    border: none;
-}
-
-.button-fondo2 {
-    background-color: var(--color-fondo);
-    width: 8rem;
-    height: 3rem;
-    border-radius: 10px;
-    color: white;
-    border: none;
-}
-
-.botones-fondo {
-    display: flex;
-    justify-content: initial;
-    align-items: center;
-    gap: 1rem;
-}
-
-.botones-enlaces {
-    color: white;
-    text-decoration: none;
-}
-
-.botones-enlaces:hover {
-    color: white;
-}
-
-.favoritos {
-    margin-top: 0.6rem;
-    margin-left: -0.5rem;
-}
-
-.icono-corazon {
-    margin-top: 0.5rem;
+    height: 600px;
+    img {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+        position: relative;
+        z-index: -1;
+        opacity: 0.6;
+    }
+    .titulo-fondo {
+        padding-top: 5rem;
+        padding-left: 6rem;
+        position: relative;
+        z-index: 6;
+        bottom: 512px;
+        color: white;
+        letter-spacing: 1px;
+        line-height: 24px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .botones-fondo {
+        display: flex;
+        justify-content: initial;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+        bottom: 500px;
+        left: 40px;
+        .button-fondo1 {
+            background-color: var(--color-btn-rojo);
+            margin-left: 3rem;
+            width: 8rem;
+            height: 3rem;
+            border-radius: 10px;
+            color: white;
+            border: none;
+            &:hover {
+                border: 1px solid var(--color-texto-blanco);
+            }
+        }
+        .button-fondo2 {
+            background-color: var(--color-fondo);
+            width: 8rem;
+            height: 3rem;
+            border-radius: 10px;
+            border: none;
+            &:hover {
+                border: 1px solid var(--color-btn-rojo);
+            }
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .favoritos {
+            margin-top: 1.6rem;
+            margin-left: -0.5rem;
+            color: white;
+            font-weight: 900;
+        }
+        .icono-corazon {
+            margin-top: 0.5rem;
+        }
+    }
 }
 
 // SEWCTION STORE -- ZALO
@@ -318,6 +316,7 @@ body {
             line-height: 22px;
         }
         .boton-store {
+            background: transparent;
             position: absolute;
             bottom: 60px;
             margin-top: 23px;
@@ -334,10 +333,15 @@ body {
                 border: 1px solid var(--color-btn-rojo);
             }
             a {
+                width: 100%;
+                height: 100%;
                 text-decoration: none;
                 color: var(--color-texto-blanco);
                 font-weight: 700;
                 letter-spacing: 0.7px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 &:hover {
                     color: var(--color-btn-rojo);
                 }

@@ -17,12 +17,6 @@ function nextImage() {
 
 
 }
-
-
-
-
-
-
 //// Slider SHOP STORE////
 const prev = document.querySelector('.prev-shop-store')
 const next = document.querySelector('.next-shop-store')

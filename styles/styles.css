@@ -154,9 +154,9 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 18px;
-  position: absolute;
-  right: 298px;
-  top: 20px;
+  position: relative;
+  left: 44px;
+  bottom: 5px;
 }
 
 .catalogo-header {

@@ -155,7 +155,6 @@ body {
   height: 40px;
   border-radius: 18px;
   position: relative;
-  left: 45px;
   bottom: 5px;
 }
 
@@ -507,5 +506,106 @@ body {
   transition: all 0.2s ease-in-out;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
+}
+
+/*footer*/
+.footer {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  background-color: var(--color-fondo);
+  border-top: 2px solid red;
+}
+
+.footer-titulo {
+  text-align: center;
+  color: white;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.box-footer {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .box-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 7.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--color-texto-gris);
+  }
+}
+
+.boxes-footer {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .boxes-footer {
+    background-color: transparent;
+    height: 20rem;
+    width: 15rem;
+    margin-top: 2.50rem;
+  }
+}
+
+.flexer-footer {
+  display: -ms-grid;
+  display: grid;
+  text-align: initial;
+}
+
+.list-footer {
+  color: var(--color-texto-gris);
+}
+
+.titulo-footer {
+  font-weight: bold;
+  color: var(--color-texto-blanco);
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-align: initial;
+}
+
+.texto-footer {
+  color: var(--color-texto-gris);
+  text-align: initial;
+}
+
+.enlaces-footer {
+  color: var(--color-texto-gris);
+  text-decoration: none;
+  margin-bottom: 5px;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+}
+
+.footer-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 45rem;
+}
+
+.copyright-footer {
+  color: white;
+}
+
+.tarjetas-footer {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 /*# sourceMappingURL=styles.css.map */

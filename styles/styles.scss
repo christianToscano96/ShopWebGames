@@ -131,12 +131,14 @@ body {
     margin-top: 6px;
     display: flex;
     justify-content: center;
-    gap: 1.2rem;
+    gap: 3.2rem;
     font-size: 14px;
     .perfil {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         border-radius: 18px;
+        position: relative;
+        bottom: 5px;
     }
 }
 
@@ -164,23 +166,29 @@ body {
 }
 
 .fondo-header {
+    position: relative;
     height: 600px;
+    z-index: 0;
     img {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         width: 100%;
         height: 600px;
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
         z-index: -1;
-        opacity: 0.6;
+        opacity: 0;
+        // display: none;
+        transition: opacity 1s ease-in-out;
     }
     .titulo-fondo {
         padding-top: 5rem;
         padding-left: 6rem;
-        position: relative;
-        z-index: 6;
-        bottom: 512px;
+        position: absolute;
+        // z-index: 6;
+        bottom: 270px;
         color: white;
         letter-spacing: 1px;
         line-height: 24px;
@@ -192,8 +200,8 @@ body {
         justify-content: initial;
         align-items: center;
         gap: 1rem;
-        position: relative;
-        bottom: 500px;
+        position: absolute;
+        bottom: 190px;
         left: 40px;
         .button-fondo1 {
             background-color: var(--color-btn-rojo);

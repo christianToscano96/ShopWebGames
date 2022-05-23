@@ -1,4 +1,23 @@
-//// Slider////
+//// Slider HEADER////
+const slidesHeaderImages = document.querySelectorAll('.fondo-header .slides-header-img');
+const nextImageDelay = 5000;
+let currentImageCounter = 0;
+
+// slidesHeaderImages[currentImageCounter].style.display = 'block';
+slidesHeaderImages[currentImageCounter].style.opacity = 0.7;
+
+setInterval(nextImage, nextImageDelay);
+
+function nextImage() {
+    // slidesHeaderImages[currentImageCounter].style.display = 'none';
+    slidesHeaderImages[currentImageCounter].style.opacity = 0;
+    currentImageCounter = (currentImageCounter + 1) % slidesHeaderImages.length;
+    // slidesHeaderImages[currentImageCounter].style.display = 'block';
+    slidesHeaderImages[currentImageCounter].style.opacity = 0.7;
+
+
+}
+//// Slider SHOP STORE////
 const prev = document.querySelector('.prev-shop-store')
 const next = document.querySelector('.next-shop-store')
 const slider = document.querySelector('.slider-shop-store')

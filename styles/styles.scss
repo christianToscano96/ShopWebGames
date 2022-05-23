@@ -8,6 +8,8 @@
 
 :root {
     --color-fondo: #1F2434;
+    --color-fondo-azuloscuro: linear-gradient(to top, #0d2143, #112346, #0e2042, #092042, #0a2143, #0b2042, #0b2042, #0a2244, #0b1f40, #071937, #091633, #0e2447);
+    --color-fondo-verde: linear-gradient(to top, #b2af29, #b2af29, #b2af29, #b2af29, #b2af29, #b2af29, #b2af29, #b2af29, #b2af29, #94942a, #4a5037, #1c2641);
     --color-fondo-azul: linear-gradient(to top, #1f2434, #1e2a49, #1b2f5f, #153476, #0f398c, #0f398c, #0f398c, #0f398c, #153476, #1b2f5f, #1e2a49, #1f2434);
     --color-texto-blanco: #fefefe;
     --color-texto-gris: #c2c3c5;
@@ -233,6 +235,320 @@ body {
     }
 }
 
+.container_topgame{
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+
+.name_game{
+    font-size: 19px;
+    color: white;
+    font-weight: 600;
+}
+
+p{
+    color: white;
+    font-size: 12px;
+}
+
+a{
+    color: var(--color-texto-blanco);
+    padding: 0px 5px 0px 5px;
+  }
+
+span{
+     font-weight: 700;
+     color: var(--color-texto-blanco);
+  }
+
+
+ .div_image{
+    
+    background-size: cover;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+
+    .image{
+    width: 100%;
+    height: 100%;
+
+    
+    } 
+
+
+  }
+
+
+.tach{
+    text-decoration: line-through;
+    color: #676768;
+    font-weight: 700;
+    
+}
+
+
+
+.btnn{
+  
+    width: 50%;
+    /* background: #f44336; */
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5px 5px 5px;
+    background-color: var(--color-btn-rojo);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.card_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 553px;
+    padding: 20px;
+    
+
+    .cards{
+        border:none;
+        width: 100%;
+        height: 350px;
+        background: transparent;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 10px 10px 10px 10px;
+        transform: scale(0.83);
+        transition: box-shadow 0.5s, transform 0.5s;
+        z-index: 1;
+        border: solid white 1px;
+
+       
+
+        
+            &:hover{
+                transform: scale(1.1);
+                border: 1.1px solid var(--color-btn-rojo);
+                border-radius: 14px;
+               
+            }
+        
+        
+        
+    }
+}
+
+.contents{
+    
+    top: 170px;
+    padding: 0px 6px 0px 6px;
+    position: relative;
+    width: 100%;
+
+}
+
+
+
+
+.cards .contenedor .image{
+    width: 100%;
+    background-size: 100%;
+
+}
+.cards .contenedor{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+}
+
+
+
+
+.cards .contenedor  .btnn{
+  background:var(--color-btn-rojo);
+  transition: background 0.5s;
+  border-radius: 73px;
+  float: left;
+  width: 68%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover{
+    transform: scale(1.1);
+    border: 1.1px solid var(--color-btn-rojo);
+    border-radius: 14px;
+}
+}
+.cards .contenedor  .btnn i{
+  font-size: 27px;
+  padding: 7px;
+  color: #fdfdfd;
+  transition: transform 0.5s;
+}
+
+.cards .contenedor  .btnn{
+    &:hover i{
+    transform: rotate(360deg);
+}
+}
+
+.cards .inside{
+
+    z-index: 9;
+    background-size: cover;
+    width: 123px;
+    height: 123px;
+    position: absolute;
+    top: -73px;
+    right: -73px;
+    border-radius: 0px 0px 200px 200px;
+    transition: all 0.5s, border-radius 2s, top 1.2s;
+    overflow: hidden;
+}
+
+
+
+.cards .inside .icon{
+    position: absolute;
+    right: 85px;
+    top: 85px;
+    color: white;
+  
+}
+
+.cards .inside{
+    &:hover{
+    width: 100%;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+    height: 100%;
+}
+}
+.cards .inside .icon{
+    &:hover{
+    opacity: 0;
+    right: 15px;
+    top: 15px;
+}
+}
+.cards  .contenedor{
+    opacity: 1;
+    transform: scale(1);
+    transform: translateY(0);
+}
+.inside{
+    &:hover{
+        opacity: 1;
+        transform: scale(1);
+        transform: translateY(0);
+
+    }
+}
+.cards .inside .contenedor{
+    padding: 5%;
+    opacity: 0;
+    transform: scale(0.5);
+    transform: translateY(-200%);
+    transition: opacity 0.2s,transform 0.8s;
+}
+.cards .inside .contenedor h1,
+.cards .inside .contenedor p{
+    color: white;
+}
+
+
+}
+
+/*sec descripcion*/
+.sec_descripcion{
+    width: 100%;
+   height: 100%;
+   background-color: #282a30;
+    
+    
+    
+    .conteiner{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       clip-path: polygon(0 0, 100% 0, 100% 62%, 0 97%);
+       background-image: var(--color-fondo-azuloscuro);
+    }
+
+    .text-header{
+        display: flex;
+        color: var(--color-texto-blanco);
+        
+      .text{
+        padding: 40px;
+          text-align: center;
+    }
+    .titulo{
+        font-size: 31px;
+        font-weight: 600;
+    }
+}
+.fondo{
+    background-size:cover;
+    
+}
+.image_cod{
+    padding-top: 53px;
+    padding-bottom: 60px;
+    margin-bottom: 219px;
+
+}
+.btn{
+  
+    width: 50%;
+    /* background: #f44336; */
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-btn-rojo);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    margin-left: 9px;
+}
+
+.tach{
+    text-decoration: line-through;
+    color: #676768;
+    font-weight: 700;
+    
+}
+.div_cod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--color-fondo-verde);
+
+}
+.div_coin{
+    padding-top: 40px;
+
+    .image_coin{
+        border-radius: 140px;
+    }
+}
+
+}
+
+
+
 // SEWCTION STORE -- ZALO
 .container {
     max-width: 1284px;
@@ -298,7 +614,7 @@ body {
             }
         }
         .division {
-            border: 1px solid#3b63ba;
+            border: 1px solid #3b63ba;
             position: relative;
             top: -2px;
             width: 77.2%;

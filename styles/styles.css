@@ -529,6 +529,10 @@ body {
   background-color: #282a30;
 }
 
+.sec_descripcion p {
+  text-align: left;
+}
+
 .sec_descripcion .conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -559,6 +563,7 @@ body {
 .sec_descripcion .text-header .titulo {
   font-size: 31px;
   font-weight: 600;
+  text-align: left;
 }
 
 .sec_descripcion .fondo {

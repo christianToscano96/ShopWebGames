@@ -475,7 +475,9 @@ span{
    height: 100%;
    background-color: #282a30;
     
-    
+    p{
+        text-align:left;
+    }
     
     .conteiner{
        
@@ -497,6 +499,8 @@ span{
     .titulo{
         font-size: 31px;
         font-weight: 600;
+        text-align: left;
+
     }
 }
 .fondo{

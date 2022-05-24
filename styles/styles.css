@@ -851,7 +851,6 @@ a {
 
 /*footer*/
 .footer {
-  margin-top: 2rem;
   margin-bottom: 1rem;
   background-color: var(--color-fondo);
   border-top: 2px solid red;

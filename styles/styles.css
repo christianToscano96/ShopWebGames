@@ -22,6 +22,10 @@ body {
   background-color: var(--color-fondo);
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   background-color: var(--color-fondo);
 }
@@ -506,10 +510,10 @@ body {
           transform: scale(0.5);
   -webkit-transform: translateY(-200%);
           transform: translateY(-200%);
-  -webkit-transition: opacity 0.2s,-webkit-transform 0.8s;
-  transition: opacity 0.2s,-webkit-transform 0.8s;
-  transition: opacity 0.2s,transform 0.8s;
-  transition: opacity 0.2s,transform 0.8s,-webkit-transform 0.8s;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.8s;
+  transition: opacity 0.2s, -webkit-transform 0.8s;
+  transition: opacity 0.2s, transform 0.8s;
+  transition: opacity 0.2s, transform 0.8s, -webkit-transform 0.8s;
 }
 
 .container_topgame .cards .inside .contenedor h1,

@@ -22,6 +22,10 @@ body {
     background-color: var(--color-fondo);
 }
 
+a {
+    text-decoration: none
+}
+
 .header {
     background-color: var(--color-fondo);
     .barra {
@@ -243,306 +247,251 @@ body {
     }
 }
 
-.container_topgame{
+.container_topgame {
     background: transparent;
     width: 100%;
     height: auto;
     top: -170px;
     position: relative;
-
-.name_game{
-    font-size: 19px;
-    color: white;
-    font-weight: 600;
-}
-
-p{
-    color: white;
-    font-size: 12px;
-}
-
-a{
-    color: var(--color-texto-blanco);
-    padding: 0px 5px 0px 5px;
-  }
-
-span{
-     font-weight: 700;
-     color: var(--color-texto-blanco);
-  }
-
-
- .div_image{
-    
-    background-size: cover;
-   width: 100%;
-   height: 100%;
-   position: absolute;
-
-    .image{
-    width: 100%;
-    height: 100%;
+    .name_game {
+        font-size: 19px;
+        color: white;
+        font-weight: 600;
     }
-  }
-
-
-.tach{
-    text-decoration: line-through;
-    color: #676768;
-    font-weight: 700;
-}
-
-
-
-.btnn{
-  
-    width: 50%;
-    /* background: #f44336; */
-    height: 36px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px 5px 5px 5px;
-    background-color: var(--color-btn-rojo);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    position: relative;
-}
-
-
-.card_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-
-    .cards{
-        border:none;
+    p {
+        color: white;
+        font-size: 12px;
+    }
+    a {
+        color: var(--color-texto-blanco);
+        padding: 0px 5px 0px 5px;
+    }
+    span {
+        font-weight: 700;
+        color: var(--color-texto-blanco);
+    }
+    .div_image {
+        background-size: cover;
         width: 100%;
-        height: 350px;
-        background: transparent;
-        margin: auto;
-        overflow: hidden;
-        border-radius: 10px 10px 10px 10px;
-        transform: scale(0.83);
-        transition: box-shadow 0.5s, transform 0.5s;
-        z-index: 1;
-        border: solid white 1px;
-            &:hover{
+        height: 100%;
+        position: absolute;
+        .image {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .tach {
+        text-decoration: line-through;
+        color: #676768;
+        font-weight: 700;
+    }
+    .btnn {
+        width: 50%;
+        /* background: #f44336; */
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 5px 5px 5px;
+        background-color: var(--color-btn-rojo);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        position: relative;
+    }
+    .card_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        .cards {
+            border: none;
+            width: 100%;
+            height: 350px;
+            background: transparent;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px 10px 10px 10px;
+            transform: scale(0.83);
+            transition: box-shadow 0.5s, transform 0.5s;
+            z-index: 1;
+            border: solid white 1px;
+            &:hover {
                 transform: scale(1.1);
                 border: 1.1px solid var(--color-btn-rojo);
                 border-radius: 14px;
             }
+        }
     }
-}
-
-.contents{
-    
-    top: 170px;
-    padding: 0px 6px 0px 6px;
-    position: relative;
-    width: 100%;
-
-}
-
-
-
-
-.cards .contenedor .image{
-    width: 100%;
-    background-size: 100%;
-
-}
-.cards .contenedor{
-    width: 100%;
-    height: 100%;
-    transition: transform 0.5s;
-}
-
-
-
-
-.cards .contenedor  .btnn{
-  background:var(--color-btn-rojo);
-  transition: background 0.5s;
-  border-radius: 73px;
-  float: left;
-  width: 68%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &:hover{
-    transform: scale(1.1);
-    border: 1.1px solid var(--color-btn-rojo);
-    border-radius: 14px;
-}
-}
-.cards .contenedor  .btnn i{
-  font-size: 27px;
-  padding: 7px;
-  color: #fdfdfd;
-  transition: transform 0.5s;
-}
-
-.cards .contenedor  .btnn{
-    &:hover i{
-    transform: rotate(360deg);
-}
-}
-
-.cards .inside{
-
-    z-index: 9;
-    background-size: cover;
-    width: 123px;
-    height: 123px;
-    position: absolute;
-    top: -73px;
-    right: -73px;
-    border-radius: 0px 0px 200px 200px;
-    transition: all 0.5s, border-radius 2s, top 1.2s;
-    overflow: hidden;
-}
-
-
-
-.cards .inside .icon{
-    position: absolute;
-    right: 85px;
-    top: 85px;
-    color: white;
-  
-}
-
-.cards .inside{
-    &:hover{
-    width: 100%;
-    right: 0;
-    top: 0;
-    border-radius: 0;
-    height: 100%;
-}
-}
-.cards .inside .icon{
-    &:hover{
-    opacity: 0;
-    right: 15px;
-    top: 15px;
-}
-}
-.cards  .contenedor{
-    opacity: 1;
-    transform: scale(1);
-    transform: translateY(0);
-}
-.inside{
-    &:hover{
-        opacity: 1;
-        transform: scale(1);
-        transform: translateY(0);
-
+    .contents {
+        top: 170px;
+        padding: 0px 6px 0px 6px;
+        position: relative;
+        width: 100%;
     }
-}
-.cards .inside .contenedor{
-    padding: 5%;
-    opacity: 0;
-    transform: scale(0.5);
-    transform: translateY(-200%);
-    transition: opacity 0.2s,transform 0.8s;
-}
-.cards .inside .contenedor h1,
-.cards .inside .contenedor p{
-    color: white;
-}
-
-
-}
-
-/*sec descripcion*/
-.sec_descripcion{
-    width: 100%;
-   height: 100%;
-   background-color: #282a30;
-    
-    p{
-        text-align:left;
+    .cards .contenedor .image {
+        width: 100%;
+        background-size: 100%;
     }
-    
-    .conteiner{
-       
+    .cards .contenedor {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s;
+    }
+    .cards .contenedor .btnn {
+        background: var(--color-btn-rojo);
+        transition: background 0.5s;
+        border-radius: 73px;
+        float: left;
+        width: 68%;
         display: flex;
         justify-content: center;
         align-items: center;
-       clip-path: polygon(0 0, 100% 0, 100% 62%, 0 97%);
-       background-image: var(--color-fondo-azuloscuro);
+        &:hover {
+            transform: scale(1.1);
+            border: 1.1px solid var(--color-btn-rojo);
+            border-radius: 14px;
+        }
     }
+    .cards .contenedor .btnn i {
+        font-size: 27px;
+        padding: 7px;
+        color: #fdfdfd;
+        transition: transform 0.5s;
+    }
+    .cards .contenedor .btnn {
+        &:hover i {
+            transform: rotate(360deg);
+        }
+    }
+    .cards .inside {
+        z-index: 9;
+        background-size: cover;
+        width: 123px;
+        height: 123px;
+        position: absolute;
+        top: -73px;
+        right: -73px;
+        border-radius: 0px 0px 200px 200px;
+        transition: all 0.5s, border-radius 2s, top 1.2s;
+        overflow: hidden;
+    }
+    .cards .inside .icon {
+        position: absolute;
+        right: 85px;
+        top: 85px;
+        color: white;
+    }
+    .cards .inside {
+        &:hover {
+            width: 100%;
+            right: 0;
+            top: 0;
+            border-radius: 0;
+            height: 100%;
+        }
+    }
+    .cards .inside .icon {
+        &:hover {
+            opacity: 0;
+            right: 15px;
+            top: 15px;
+        }
+    }
+    .cards .contenedor {
+        opacity: 1;
+        transform: scale(1);
+        transform: translateY(0);
+    }
+    .inside {
+        &:hover {
+            opacity: 1;
+            transform: scale(1);
+            transform: translateY(0);
+        }
+    }
+    .cards .inside .contenedor {
+        padding: 5%;
+        opacity: 0;
+        transform: scale(0.5);
+        transform: translateY(-200%);
+        transition: opacity 0.2s, transform 0.8s;
+    }
+    .cards .inside .contenedor h1,
+    .cards .inside .contenedor p {
+        color: white;
+    }
+}
 
-    .text-header{
+
+/*sec descripcion*/
+
+.sec_descripcion {
+    width: 100%;
+    height: 100%;
+    background-color: #282a30;
+    p {
+        text-align: left;
+    }
+    .conteiner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        clip-path: polygon(0 0, 100% 0, 100% 62%, 0 97%);
+        background-image: var(--color-fondo-azuloscuro);
+    }
+    .text-header {
         display: flex;
         color: var(--color-texto-blanco);
-        
-      .text{
-        padding: 40px;
-          text-align: center;
+        .text {
+            padding: 40px;
+            text-align: center;
+        }
+        .titulo {
+            font-size: 31px;
+            font-weight: 600;
+            text-align: left;
+        }
     }
-    .titulo{
-        font-size: 31px;
-        font-weight: 600;
-        text-align: left;
-
+    .fondo {
+        background-size: cover;
     }
-}
-.fondo{
-    background-size:cover;
-    
-}
-.image_cod{
-    padding-top: 53px;
-    padding-bottom: 60px;
-    margin-bottom: 219px;
-
-}
-.btn{
-  
-    width: 50%;
-    /* background: #f44336; */
-    height: 36px;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-btn-rojo);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    position: relative;
-    margin-left: 9px;
-}
-
-.tach{
-    text-decoration: line-through;
-    color: #676768;
-    font-weight: 700;
-    
-}
-.div_cod{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: var(--color-fondo-verde);
-
-}
-.div_coin{
-    padding-top: 40px;
-
-    .image_coin{
-        border-radius: 140px;
+    .image_cod {
+        padding-top: 53px;
+        padding-bottom: 60px;
+        margin-bottom: 219px;
+    }
+    .btn {
+        width: 50%;
+        /* background: #f44336; */
+        height: 36px;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-btn-rojo);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        position: relative;
+        margin-left: 9px;
+    }
+    .tach {
+        text-decoration: line-through;
+        color: #676768;
+        font-weight: 700;
+    }
+    .div_cod {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: var(--color-fondo-verde);
+    }
+    .div_coin {
+        padding-top: 40px;
+        .image_coin {
+            border-radius: 140px;
+        }
     }
 }
-
-}
-
-
 
 // SEWCTION STORE -- ZALO
 .container {
@@ -711,26 +660,28 @@ span{
     }
 }
 
+
 /*footer*/
+
 .footer {
     margin-top: 2rem;
     margin-bottom: 1rem;
     background-color: var(--color-fondo);
     border-top: 2px solid red;
-  }
-  
-  .footer-titulo {
+}
+
+.footer-titulo {
     text-align: center;
     color: white;
     margin-top: 2rem;
     font-weight: bold;
-  }
-  
-  .box-footer {
+}
+
+.box-footer {
     text-align: center;
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .box-footer {
         display: flex;
         justify-content: center;
@@ -740,60 +691,63 @@ span{
         margin-bottom: 1.5rem;
         border-bottom: 2px solid var(--color-texto-gris);
     }
-  }
-  
-  .boxes-footer {
+}
+
+.boxes-footer {
     margin-bottom: 2rem;
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .boxes-footer {
         background-color: transparent;
         height: 20rem;
         width: 15rem;
         margin-top: 2.50rem;
     }
-  }
-  .flexer-footer {
+}
+
+.flexer-footer {
     display: grid;
     text-align: initial;
-  }
-  
-  .list-footer {
+}
+
+.list-footer {
     color: var(--color-texto-gris);
-  }
-  
-  .titulo-footer {
+}
+
+.titulo-footer {
     font-weight: bold;
     color: var(--color-texto-blanco);
     font-size: 25px;
     margin-bottom: 10px;
     text-align: initial;
-  }
-  
-  .texto-footer {
+}
+
+.texto-footer {
     color: var(--color-texto-gris);
     text-align: initial;
-  }
-  
-  
-  .enlaces-footer {
+}
+
+.enlaces-footer {
     color: var(--color-texto-gris);
     text-decoration: none;
     margin-bottom: 5px;
     align-items: initial;
-  }
-  
-  .footer-end {
+}
+
+.footer-end {
     display: flex;
     justify-content: center;
     gap: 45rem;
-  }
-  .copyright-footer {
+}
+
+.copyright-footer {
     color: white;
-  }
-  .tarjetas-footer {
+}
+
+.tarjetas-footer {
     width: 2.5rem;
     height: 2.5rem;
-  }
+}
+
 @import "media";

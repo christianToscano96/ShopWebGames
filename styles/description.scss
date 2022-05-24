@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; //par que tome width 100%
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --color-fondo: #1F2434;
+    --color-fondo-azuloscuro: linear-gradient(to top, #0d2143, #112346, #0e2042, #092042, #0a2143, #0b2042, #0b2042, #0a2244, #0b1f40, #071937, #091633, #0e2447);
+    --color-fondo-verde: linear-gradient(to top, #b2af29, #b2af29, #b2af29, #b2af29, #b2af29, #b2af29, #b2af29, #b2af29, #b2af29, #94942a, #4a5037, #1c2641);
+    --color-fondo-azul: linear-gradient(to top, #1f2434, #1e2a49, #1b2f5f, #153476, #0f398c, #0f398c, #0f398c, #0f398c, #153476, #1b2f5f, #1e2a49, #1f2434);
+    --color-texto-blanco: #fefefe;
+    --color-texto-gris: #c2c3c5;
+    --color-texto-descripcion: #f2f2f2;
+    --color-btn-rojo: #d71e25;
+}
+
+body {
+    background-color: var(--color-fondo);
+}
+
+a {
+    text-decoration: none
+}

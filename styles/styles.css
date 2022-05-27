@@ -885,6 +885,121 @@ a {
           transform: translateY(-3px);
 }
 
+.video {
+  position: relative;
+  z-index: 1;
+  top: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--color-texto-blanco);
+  text-align: center;
+}
+
+.video h4 {
+  font-weight: bold;
+}
+
+.video h6 {
+  margin-bottom: 30px;
+}
+
+.video iframe {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.relaity-virtual {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 710px;
+  background: #0057c2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  padding: 181px;
+}
+
+.relaity-virtual .relaity-virtual__text {
+  color: var(--color-texto-blanco);
+}
+
+.relaity-virtual .relaity-virtual__text h3 {
+  font-weight: bold;
+  position: absolute;
+}
+
+.relaity-virtual .relaity-virtual__text h4 {
+  margin-top: 102px;
+  font-weight: bold;
+}
+
+.relaity-virtual .relaity-virtual__text button {
+  width: 160px;
+  height: 42px;
+  background: #0057c2;
+  border-radius: 50px;
+  color: white;
+  margin-top: 20px;
+}
+
+.relaity-virtual .relaity-virtual__text button a {
+  color: white;
+}
+
+.relaity-virtual .relaity-virtual__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.relaity-virtual .relaity-virtual__container .relaity-virtual__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.relaity-virtual .relaity-virtual__container .relaity-virtual__description div {
+  width: 106px;
+  display: block ruby;
+}
+
+.relaity-virtual .relaity-virtual__container .relaity-virtual__description div img {
+  width: 25px;
+  height: 25px;
+}
+
+.relaity-virtual .relaity-virtual__container .relaity-virtual__description div h4 {
+  font-weight: bold;
+}
+
+.relaity-virtual .relaity-virtual__container .relaity-virtual__description div p {
+  margin-left: 32px;
+}
+
 /*footer*/
 .footer {
   margin-top: 2rem;

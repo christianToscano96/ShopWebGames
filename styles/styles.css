@@ -624,20 +624,17 @@ a {
   width: 90%;
   max-width: 1200px;
   margin: 15px auto;
-  background: blue;
   overflow: hidden;
   position: relative;
 }
 
 .carrusel .grande {
   width: 200%;
-  height: 300px;
-  background-color: orange;
+  margin: 20px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
-  margin: 0 5px;
   gap: 50px;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
@@ -647,8 +644,7 @@ a {
 
 .carrusel .caja {
   width: 100%;
-  height: 200px;
-  margin: 20px 0;
+  height: 250px;
   background: -webkit-gradient(linear, right top, left top, color-stop(60%, rgba(0, 0, 0, 0)), to(#615c5c)), url(https://live.mrf.io/statics/i/ps/www.muycomputer.com/wp-content/uploads/2020/04/Days-Gone-1.jpg?width=1200&enable=upscale);
   background: linear-gradient(to left, rgba(0, 0, 0, 0) 60%, #615c5c 100%), url(https://live.mrf.io/statics/i/ps/www.muycomputer.com/wp-content/uploads/2020/04/Days-Gone-1.jpg?width=1200&enable=upscale);
   background-size: cover;
@@ -672,10 +668,11 @@ a {
 .carrusel .caja:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  border: 1.1px solid var(--color-btn-rojo);
 }
 
-.carrusel .caja .contenido__caja {
-  width: 50%;
+.carrusel .caja .caja__contenido {
+  width: 70%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -690,23 +687,48 @@ a {
   margin: 0 0 0 30px;
 }
 
-.carrusel .caja .caja__img {
-  background-color: red;
-  max-width: 60%;
-  border: 1px solid #fff;
-  border-radius: 5px;
+.carrusel .caja .caja__contenido .caja__img {
+  background-color: #db0e0e;
+  max-width: 140px;
+  height: 40px;
+  border-radius: 10px;
   margin: 15px 0 0;
+  padding: 10px 5px;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  align-items: center;
 }
 
-.carrusel .activo {
-  background-color: red;
+.carrusel .caja .caja__contenido .caja__titulo {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.carrusel .caja .caja__contenido .caja__p {
+  margin: 0;
+}
+
+.carrusel .caja .caja__contenido .caja__precio {
+  text-decoration: line-through;
+  color: #676768;
+  font-weight: 700;
+}
+
+.carrusel .caja .caja__contenido .caja__precioOff {
+  font-weight: 700;
+}
+
+.carrusel .caja .caja__contenido .caja__btn {
+  color: white;
+  font-weight: 700;
 }
 
 .carrusel .btns .n1 {
@@ -714,10 +736,21 @@ a {
   top: 50%;
 }
 
+.carrusel .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .carrusel .btns .n2 {
   position: absolute;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   top: 50%;
-  right: 2%;
+  right: 0%;
 }
 
 .container {

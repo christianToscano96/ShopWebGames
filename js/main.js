@@ -24,11 +24,11 @@ const prevTopGame = document.querySelector('.prev-top-game')
 const nextTopgame = document.querySelector('.next-top-game')
 
 prevTopGame.addEventListener('click', () => {
-    sliderTopGame.scrollLeft -= 240
+    sliderTopGame.scrollLeft -= 238
 })
 
 nextTopgame.addEventListener('click', () => {
-        sliderTopGame.scrollLeft += 240
+        sliderTopGame.scrollLeft += 238
     })
     //END SLIDER SCROLL TOP-GAME // FER // 
 

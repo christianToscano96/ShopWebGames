@@ -35,9 +35,11 @@ a {
         padding-top: 20px;
         padding-bottom: 5px;
         .titulo {
-            color: var(--color-texto-blanco);
-            font-size: 25px;
-            width: 4%;
+            img {
+                position: relative;
+                left: 86px;
+                top: -17px;
+            }
         }
         .barra2 {
             display: flex;
@@ -185,21 +187,25 @@ a {
         top: 0;
         left: 0;
         z-index: -1;
-        opacity: 0;
-        // display: none;
         transition: opacity 1s ease-in-out;
+        opacity: 0;
     }
     .titulo-fondo {
         padding-top: 5rem;
         padding-left: 6rem;
         position: absolute;
-        // z-index: 6;
         bottom: 270px;
         color: white;
         letter-spacing: 1px;
         line-height: 24px;
         font-size: 13px;
         font-weight: bold;
+        img {
+            position: relative;
+            width: 250px;
+            height: 200px;
+            opacity: 1;
+        }
     }
     .botones-fondo {
         display: flex;
@@ -249,10 +255,11 @@ a {
 
 .container_topgame {
     background: transparent;
-    width: 100%;
+    width: 96.6%;
     height: auto;
     top: -170px;
     position: relative;
+    margin-left: 20px;
     .name_game {
         font-size: 19px;
         color: white;
@@ -428,26 +435,45 @@ a {
     }
     .flex-icon-cards {
         position: absolute;
-        top: 374px;
+        z-index: 1;
+        top: 180px;
         left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 20px;
+        width: 0;
+        // display: flex;
+        // justify-content: space-between;
         .prev-top-game {
+            opacity: 0.7;
             width: 50px;
             cursor: pointer;
+            height: 50px;
+            border: 1px solid whitesmoke;
+            padding: 5px;
+            position: relative;
+            right: 21px;
+            &:hover {
+                opacity: 1;
+            }
             &:active {
-                transition: all 0.2s ease-in-out;
-                transform: translateY(-3px);
+                transition: all 0.1s ease-in-out;
+                transform: scale(0.9);
             }
         }
         .next-top-game {
+            opacity: 0.7;
             width: 50px;
             cursor: pointer;
+            height: 50px;
+            border: 1px solid whitesmoke;
+            padding: 5px;
+            position: relative;
+            left: 1192px;
+            bottom: 50px;
+            &:hover {
+                opacity: 1;
+            }
             &:active {
-                transition: all 0.2s ease-in-out;
-                transform: translateY(-3px);
+                transition: all 0.1s ease-in-out;
+                transform: scale(0.9);
             }
         }
     }
@@ -681,9 +707,12 @@ a {
             img {
                 width: auto;
                 height: auto;
+                opacity: 0.7;
+                &:hover {
+                    opacity: 1;
+                }
                 &:active {
-                    transition: all 0.2s ease-in-out;
-                    transform: translateY(-3px);
+                    transform: scale(0.9);
                 }
             }
         }

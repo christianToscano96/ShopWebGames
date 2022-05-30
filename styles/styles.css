@@ -628,9 +628,33 @@ a {
   position: relative;
 }
 
+.carrusel .nuevos {
+  color: wheat;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carrusel .nuevos .nuevos__titulo {
+  font-weight: 700;
+}
+
+.carrusel .nuevos .nuevos__btn {
+  color: var(--color-texto-blanco);
+  padding: 5px 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
 .carrusel .grande {
-  width: 200%;
-  margin: 20px;
+  height: 300px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[6];
@@ -643,11 +667,12 @@ a {
 }
 
 .carrusel .caja {
-  width: 100%;
+  width: 360px;
   height: 250px;
   background: -webkit-gradient(linear, right top, left top, color-stop(60%, rgba(0, 0, 0, 0)), to(#615c5c)), url(https://live.mrf.io/statics/i/ps/www.muycomputer.com/wp-content/uploads/2020/04/Days-Gone-1.jpg?width=1200&enable=upscale);
   background: linear-gradient(to left, rgba(0, 0, 0, 0) 60%, #615c5c 100%), url(https://live.mrf.io/statics/i/ps/www.muycomputer.com/wp-content/uploads/2020/04/Days-Gone-1.jpg?width=1200&enable=upscale);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   color: white;
   border: 1px solid #fff;
@@ -751,6 +776,12 @@ a {
           transform: rotate(180deg);
   top: 50%;
   right: 0%;
+}
+
+@media (max-width: 768px) {
+  .grande {
+    background-color: blue;
+  }
 }
 
 .container {

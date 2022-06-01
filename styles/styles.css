@@ -603,7 +603,8 @@ a {
           align-items: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 62%, 0 97%);
           clip-path: polygon(0 0, 100% 0, 100% 62%, 0 97%);
-  background-image: var(--color-fondo-azuloscuro);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1c2642), color-stop(#4f325a), color-stop(#863a5e), color-stop(#b14d4f), color-stop(#ac4c50), color-stop(#ccd70e), color-stop(#cdd715), color-stop(#ccd70b), color-stop(#cdd80a), color-stop(#cbd618), color-stop(#ced908), to(#cbd618));
+  background-image: linear-gradient(to bottom, #1c2642, #4f325a, #863a5e, #b14d4f, #ac4c50, #ccd70e, #cdd715, #ccd70b, #cdd80a, #cbd618, #ced908, #cbd618);
 }
 
 .sec_descripcion .text-header {
@@ -629,9 +630,7 @@ a {
 }
 
 .sec_descripcion .image_cod {
-  padding-top: 53px;
   padding-bottom: 60px;
-  margin-bottom: 219px;
 }
 
 .sec_descripcion .btn {
@@ -659,23 +658,10 @@ a {
 }
 
 .sec_descripcion .div_cod {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-image: var(--color-fondo-verde);
+  margin: auto;
 }
 
-.sec_descripcion .div_coin {
-  padding-top: 40px;
-}
-
-.sec_descripcion .div_coin .image_coin {
+.sec_descripcion .image_coin {
   border-radius: 140px;
 }
 

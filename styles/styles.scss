@@ -549,6 +549,156 @@ a {
     }
 }
 
+//SECTION--SCROLLBOX (Francisco)
+.carrusel{
+    width: 90%;
+    max-width: 1200px;
+    margin: 15px auto;
+    // background: blue;
+    overflow: hidden;
+    position: relative;
+
+    & .nuevos{
+        color: wheat;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .nuevos__titulo{
+            font-weight: 700;
+        }
+        .nuevos__btn{
+            color: var(--color-texto-blanco);
+            padding: 5px 20px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+
+        }
+    }
+    & .grande{
+        // width: 200%;
+        // margin: 20px;
+        height: 300px;
+        // background-color: orange;
+        
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        // margin: 0 5px;
+        gap: 50px;
+        
+        transition: all .5s ease;
+        transform: translateX(-0%);
+        //Restar en 9 
+    }
+
+    & .caja{
+        // width: 100%;
+        width: 360px;
+        height: 250px;
+        // margin: 20px 0;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0)60%, rgb(97, 92, 92) 100%), url(https://live.mrf.io/statics/i/ps/www.muycomputer.com/wp-content/uploads/2020/04/Days-Gone-1.jpg?width=1200&enable=upscale);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        
+        display: flex;
+        flex-direction: column;
+        
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 100ms;
+
+        &:hover{
+            transform: scale(1.1);
+            border: 1.1px solid var(--color-btn-rojo);
+        }
+
+    }
+
+    & .caja{
+        
+        & .caja__contenido{
+            width: 70%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 0 0 30px;
+    
+           & .caja__img{
+                background-color: #db0e0e;
+                max-width: 140px ;
+                height: 40px;
+                border-radius: 10px;
+                margin: 15px 0 0;
+                padding: 10px 5px;
+                cursor: pointer;
+            
+                align-items: center;
+
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+           & .caja__titulo{
+                font-weight: 600;
+                font-size: 20px;
+            }
+            & .caja__p{
+                margin: 0;
+            }
+            .caja__precio{
+
+                text-decoration: line-through;
+                color: #676768;
+                font-weight: 700;
+            }
+            .caja__precioOff{
+                font-weight: 700;
+
+            }
+            .caja__btn{
+                color: white;
+                font-weight: 700;
+            }
+        }
+    }
+
+    
+       & .activo{
+            // background-color: var(--color-texto-gris);
+        }
+        & .btns .n1{
+            position: absolute;
+            top: 50%;
+        }
+        .btns{
+            display: flex;
+            justify-content: space-between;
+        }
+        & .btns .n2{
+            position: absolute;
+            transform: rotate(180deg);
+            top: 50%;
+            right: 0%;
+        }
+
+
+}
+
+@media (max-width: 768px){
+    .grande{
+        background-color: blue;
+        // transform: translateX(-2%);
+
+    }
+}
+
+
 // SEWCTION STORE -- ZALO
 .container {
     max-width: 1284px;

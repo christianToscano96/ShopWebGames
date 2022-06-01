@@ -666,9 +666,9 @@ a {
 }
 
 .carrusel {
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
   margin: 15px auto;
+  margin-top: -120px;
   overflow: hidden;
   position: relative;
 }

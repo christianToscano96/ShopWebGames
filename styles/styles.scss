@@ -23,7 +23,7 @@ body {
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 .header {
@@ -35,9 +35,11 @@ a {
         padding-top: 20px;
         padding-bottom: 5px;
         .titulo {
-            color: var(--color-texto-blanco);
-            font-size: 25px;
-            width: 4%;
+            img {
+                position: relative;
+                left: 86px;
+                top: -17px;
+            }
         }
         .barra2 {
             display: flex;
@@ -185,21 +187,25 @@ a {
         top: 0;
         left: 0;
         z-index: -1;
-        opacity: 0;
-        // display: none;
         transition: opacity 1s ease-in-out;
+        opacity: 0;
     }
     .titulo-fondo {
         padding-top: 5rem;
         padding-left: 6rem;
         position: absolute;
-        // z-index: 6;
         bottom: 270px;
         color: white;
         letter-spacing: 1px;
         line-height: 24px;
         font-size: 13px;
         font-weight: bold;
+        img {
+            position: relative;
+            width: 250px;
+            height: 200px;
+            opacity: 1;
+        }
     }
     .botones-fondo {
         display: flex;
@@ -249,10 +255,11 @@ a {
 
 .container_topgame {
     background: transparent;
-    width: 100%;
+    width: 96.6%;
     height: auto;
     top: -170px;
     position: relative;
+    margin-left: 20px;
     .name_game {
         font-size: 19px;
         color: white;
@@ -300,14 +307,19 @@ a {
         position: relative;
     }
     .card_container {
-        display: flex;
-        justify-content: center;
+        display: -webkit-box;
+        // justify-content: center;
         align-items: center;
         padding: 20px;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        scrollbar-width: none;
         .cards {
             border: none;
-            width: 100%;
-            height: 350px;
+            // width: 100%;
+            // height: 350px;
+            width: 237px;
+            height: 343px;
             background: transparent;
             margin: auto;
             overflow: hidden;
@@ -420,6 +432,50 @@ a {
     .cards .inside .contenedor h1,
     .cards .inside .contenedor p {
         color: white;
+    }
+    .flex-icon-cards {
+        position: absolute;
+        z-index: 1;
+        top: 180px;
+        left: 0;
+        width: 0;
+        // display: flex;
+        // justify-content: space-between;
+        .prev-top-game {
+            opacity: 0.7;
+            width: 50px;
+            cursor: pointer;
+            height: 50px;
+            border: 1px solid whitesmoke;
+            padding: 5px;
+            position: relative;
+            right: 21px;
+            &:hover {
+                opacity: 1;
+            }
+            &:active {
+                transition: all 0.1s ease-in-out;
+                transform: scale(0.9);
+            }
+        }
+        .next-top-game {
+            opacity: 0.7;
+            width: 50px;
+            cursor: pointer;
+            height: 50px;
+            border: 1px solid whitesmoke;
+            padding: 5px;
+            position: relative;
+            left: 1192px;
+            bottom: 50px;
+            &:hover {
+                opacity: 1;
+            }
+            &:active {
+                transition: all 0.1s ease-in-out;
+                transform: scale(0.9);
+            }
+        }
     }
 }
 
@@ -801,19 +857,103 @@ a {
             img {
                 width: auto;
                 height: auto;
+                opacity: 0.7;
+                &:hover {
+                    opacity: 1;
+                }
                 &:active {
-                    transition: all 0.2s ease-in-out;
-                    transform: translateY(-3px);
+                    transform: scale(0.9);
                 }
             }
         }
     }
 }
 
+// REALITY VIRTUAL 
+.video {
+    position: relative;
+    z-index: 1;
+    top: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-texto-blanco);
+    text-align: center;
+    h4 {
+        font-weight: bold;
+    }
+    h6 {
+        margin-bottom: 30px;
+    }
+    iframe {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+}
+
+.relaity-virtual {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 710px;
+    background: #0057c2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 181px;
+    .relaity-virtual__text {
+        color: var(--color-texto-blanco);
+        h3 {
+            font-weight: bold;
+            position: absolute;
+        }
+        h4 {
+            margin-top: 102px;
+            font-weight: bold;
+        }
+        button {
+            width: 160px;
+            height: 42px;
+            background: #0057c2;
+            border-radius: 50px;
+            color: white;
+            margin-top: 20px;
+            a {
+                color: white;
+            }
+        }
+    }
+    .relaity-virtual__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .relaity-virtual__description {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            div {
+                width: 106px;
+                display: block ruby;
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+                h4 {
+                    font-weight: bold;
+                }
+                p {
+                    margin-left: 32px;
+                }
+            }
+        }
+    }
+}
+
+//END REALITY VIRTUAL 
 
 /*footer*/
 
 .footer {
+    margin-top: 2rem;
     margin-bottom: 1rem;
     background-color: var(--color-fondo);
     border-top: 2px solid red;

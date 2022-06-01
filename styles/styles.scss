@@ -23,7 +23,7 @@ body {
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 .header {
@@ -35,9 +35,11 @@ a {
         padding-top: 20px;
         padding-bottom: 5px;
         .titulo {
-            color: var(--color-texto-blanco);
-            font-size: 25px;
-            width: 4%;
+            img {
+                position: relative;
+                left: 86px;
+                top: -17px;
+            }
         }
         .barra2 {
             display: flex;
@@ -185,21 +187,25 @@ a {
         top: 0;
         left: 0;
         z-index: -1;
-        opacity: 0;
-        // display: none;
         transition: opacity 1s ease-in-out;
+        opacity: 0;
     }
     .titulo-fondo {
         padding-top: 5rem;
         padding-left: 6rem;
         position: absolute;
-        // z-index: 6;
         bottom: 270px;
         color: white;
         letter-spacing: 1px;
         line-height: 24px;
         font-size: 13px;
         font-weight: bold;
+        img {
+            position: relative;
+            width: 250px;
+            height: 200px;
+            opacity: 1;
+        }
     }
     .botones-fondo {
         display: flex;
@@ -249,10 +255,11 @@ a {
 
 .container_topgame {
     background: transparent;
-    width: 100%;
+    width: 96.6%;
     height: auto;
     top: -170px;
     position: relative;
+    margin-left: 20px;
     .name_game {
         font-size: 19px;
         color: white;
@@ -300,14 +307,19 @@ a {
         position: relative;
     }
     .card_container {
-        display: flex;
-        justify-content: center;
+        display: -webkit-box;
+        // justify-content: center;
         align-items: center;
         padding: 20px;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        scrollbar-width: none;
         .cards {
             border: none;
-            width: 100%;
-            height: 350px;
+            // width: 100%;
+            // height: 350px;
+            width: 237px;
+            height: 343px;
             background: transparent;
             margin: auto;
             overflow: hidden;
@@ -421,6 +433,50 @@ a {
     .cards .inside .contenedor p {
         color: white;
     }
+    .flex-icon-cards {
+        position: absolute;
+        z-index: 1;
+        top: 180px;
+        left: 0;
+        width: 0;
+        // display: flex;
+        // justify-content: space-between;
+        .prev-top-game {
+            opacity: 0.7;
+            width: 50px;
+            cursor: pointer;
+            height: 50px;
+            border: 1px solid whitesmoke;
+            padding: 5px;
+            position: relative;
+            right: 21px;
+            &:hover {
+                opacity: 1;
+            }
+            &:active {
+                transition: all 0.1s ease-in-out;
+                transform: scale(0.9);
+            }
+        }
+        .next-top-game {
+            opacity: 0.7;
+            width: 50px;
+            cursor: pointer;
+            height: 50px;
+            border: 1px solid whitesmoke;
+            padding: 5px;
+            position: relative;
+            left: 1192px;
+            bottom: 50px;
+            &:hover {
+                opacity: 1;
+            }
+            &:active {
+                transition: all 0.1s ease-in-out;
+                transform: scale(0.9);
+            }
+        }
+    }
 }
 
 
@@ -487,6 +543,156 @@ a {
             border-radius: 140px;
         }
 }
+
+//SECTION--SCROLLBOX (Francisco)
+.carrusel{
+    width: 90%;
+    max-width: 1200px;
+    margin: 15px auto;
+    // background: blue;
+    overflow: hidden;
+    position: relative;
+
+    & .nuevos{
+        color: wheat;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .nuevos__titulo{
+            font-weight: 700;
+        }
+        .nuevos__btn{
+            color: var(--color-texto-blanco);
+            padding: 5px 20px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+
+        }
+    }
+    & .grande{
+        // width: 200%;
+        // margin: 20px;
+        height: 300px;
+        // background-color: orange;
+        
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        // margin: 0 5px;
+        gap: 50px;
+        
+        transition: all .5s ease;
+        transform: translateX(-0%);
+        //Restar en 9 
+    }
+
+    & .caja{
+        // width: 100%;
+        width: 360px;
+        height: 250px;
+        // margin: 20px 0;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0)60%, rgb(97, 92, 92) 100%), url(https://live.mrf.io/statics/i/ps/www.muycomputer.com/wp-content/uploads/2020/04/Days-Gone-1.jpg?width=1200&enable=upscale);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        
+        display: flex;
+        flex-direction: column;
+        
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 100ms;
+
+        &:hover{
+            transform: scale(1.1);
+            border: 1.1px solid var(--color-btn-rojo);
+        }
+
+    }
+
+    & .caja{
+        
+        & .caja__contenido{
+            width: 70%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 0 0 30px;
+    
+           & .caja__img{
+                background-color: #db0e0e;
+                max-width: 140px ;
+                height: 40px;
+                border-radius: 10px;
+                margin: 15px 0 0;
+                padding: 10px 5px;
+                cursor: pointer;
+            
+                align-items: center;
+
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+           & .caja__titulo{
+                font-weight: 600;
+                font-size: 20px;
+            }
+            & .caja__p{
+                margin: 0;
+            }
+            .caja__precio{
+
+                text-decoration: line-through;
+                color: #676768;
+                font-weight: 700;
+            }
+            .caja__precioOff{
+                font-weight: 700;
+
+            }
+            .caja__btn{
+                color: white;
+                font-weight: 700;
+            }
+        }
+    }
+
+    
+       & .activo{
+            // background-color: var(--color-texto-gris);
+        }
+        & .btns .n1{
+            position: absolute;
+            top: 50%;
+        }
+        .btns{
+            display: flex;
+            justify-content: space-between;
+        }
+        & .btns .n2{
+            position: absolute;
+            transform: rotate(180deg);
+            top: 50%;
+            right: 0%;
+        }
+
+
+}
+
+@media (max-width: 768px){
+    .grande{
+        background-color: blue;
+        // transform: translateX(-2%);
+
+    }
+}
+
 
 // SEWCTION STORE -- ZALO
 .container {
@@ -646,19 +852,103 @@ a {
             img {
                 width: auto;
                 height: auto;
+                opacity: 0.7;
+                &:hover {
+                    opacity: 1;
+                }
                 &:active {
-                    transition: all 0.2s ease-in-out;
-                    transform: translateY(-3px);
+                    transform: scale(0.9);
                 }
             }
         }
     }
 }
 
+// REALITY VIRTUAL 
+.video {
+    position: relative;
+    z-index: 1;
+    top: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-texto-blanco);
+    text-align: center;
+    h4 {
+        font-weight: bold;
+    }
+    h6 {
+        margin-bottom: 30px;
+    }
+    iframe {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+}
+
+.relaity-virtual {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 710px;
+    background: #0057c2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 181px;
+    .relaity-virtual__text {
+        color: var(--color-texto-blanco);
+        h3 {
+            font-weight: bold;
+            position: absolute;
+        }
+        h4 {
+            margin-top: 102px;
+            font-weight: bold;
+        }
+        button {
+            width: 160px;
+            height: 42px;
+            background: #0057c2;
+            border-radius: 50px;
+            color: white;
+            margin-top: 20px;
+            a {
+                color: white;
+            }
+        }
+    }
+    .relaity-virtual__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .relaity-virtual__description {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            div {
+                width: 106px;
+                display: block ruby;
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+                h4 {
+                    font-weight: bold;
+                }
+                p {
+                    margin-left: 32px;
+                }
+            }
+        }
+    }
+}
+
+//END REALITY VIRTUAL 
 
 /*footer*/
 
 .footer {
+    margin-top: 2rem;
     margin-bottom: 1rem;
     background-color: var(--color-fondo);
     border-top: 2px solid red;
